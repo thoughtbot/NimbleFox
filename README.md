@@ -43,3 +43,19 @@ I guess you could do it this way if that's your thing.
 
 Add this repo as a submodule, and add the project file to your workspace. You
 can then link against `NimbleFox.framework` for your application target.
+
+## Usage ##
+
+NimbleFox adds a single matcher to Nimble: `hold()`. Using this matcher, you
+can write your Fox assertions like so:
+
+```swift
+let property = forAll(tuple([integer(), integer()])) { tuple in
+  let a = tuple[0] as Int
+  let b = tuple[1] as Int
+
+  return a + b == b + a
+}
+
+expect(property).to(hold())
+```
