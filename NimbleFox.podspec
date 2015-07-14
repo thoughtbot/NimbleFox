@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'NimbleFox'
-  spec.version = '1.0.0'
+  spec.version = '2.0.0'
   spec.summary = 'Nimble matchers for Fox'
   spec.homepage = 'https://github.com/thoughtbot/NimbleFox'
   spec.license = { :type => 'MIT', :file => 'LICENSE' }
